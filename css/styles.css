@@ -1,0 +1,1984 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    /* Colors */
+    --blue: #0065FC;
+    --light-blue: #DEEBFF;
+    --grey: #F2F2F2;
+    --black: #000000;
+    --white: #FFFFFF;
+
+    /* Text configuration */
+    --body-font: 'Raleway', sans-serif;
+    --body-font-weight: 400;
+    --bold-font-weight: 700;
+
+    --body-font-size: 1rem; /* 16px */
+    --body-highlight-font-size: 1.13rem; /* 18px */
+    --description-font-size: 0.88rem; /* 14px */
+    --title-font-size: 1.38rem; /* 22px */
+    
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Nav bar */
+.appBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 1.87rem;
+    margin-bottom: 3.75rem;
+    width: 3.82rem;
+    height: auto;
+}
+
+nav {
+    color: var(--black);
+    margin-top: 1.12rem;
+    font-size: var(--body-font-size );
+}
+
+.active {
+    padding-top: 0.95rem;
+    color: var(--black);
+}
+
+.active:hover {
+    color: var(--blue);
+    border-top: solid 2px var(--blue);
+    transition: color 0.2s ease-in-out;
+}
+
+.inactive {
+    padding-top: 0.95rem;
+    margin-left: 4.38rem;
+    color: var(--black);
+}
+
+.inactive:hover {
+    color: var(--blue);
+    border-top: solid 2px var(--blue);
+    transition: color 0.2s ease-in-out;
+}
+
+/* End Nav bar */
+
+/* Main hero */
+
+h1 {
+    font-size: var(--title-font-size);
+    font-weight: var(--bold-font-weight);
+}
+
+.slogan {
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-top: 2.25rem;
+    border: solid 1px var(--grey);
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.search_icon {
+    background-color: var(--grey);
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.city {
+    border: none;
+    font-size: var(--body-highlight-font-size);
+    font-weight: var(--bold-font-weight);
+    text-align: center;
+}
+
+.search {
+    background-color: var(--blue);
+    font-size: var(--body-highlight-font-size);
+    font-weight: var(--bold-font-weight);
+    color: var(--white);
+    border: none;
+    border-radius: 0 15px 15px 0;
+    width: 8.25rem;
+    height: 3.12rem;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.search:hover {
+    color: var(--black);
+
+}
+
+.icone {
+    color: var(--blue);
+    width: 0.875rem;
+    height: 1.125rem;
+}
+
+/* End main hero */
+
+/* Filter bar */
+
+.search_filter {
+    margin-top: 2.125rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    max-width: 80%;
+}
+
+.search_filter p {
+    margin-right: 2rem;
+}
+
+.search_filter div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filter {
+    margin: 0;
+    font-size: var(--body-highlight-font-size);
+    font-weight: var(--bold-font-weight);
+}
+
+.select-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.063rem;
+    font-weight: var(--bold-font-weight);
+    color: var(--black);
+    border: solid 2px var(--grey);
+    border-radius: 30px;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.select-filter:hover {
+    background-color: var(--light-blue);
+    transform: scale(1.1);
+}
+
+.svg_dollar {
+    width: 10.813rem;
+    height: 3.125rem;
+    
+}
+
+.svg_person {
+    width: 8.375rem;
+    height: 3.125rem;
+}
+
+.svg_heart {
+    width: 10.625rem;
+    height: 3.125rem;
+}
+
+.svg_fire {
+    width: 10.438rem;
+    height: 3.125rem;
+}
+
+.icone_filter_dollar {
+    margin: 0;
+    fill: var(--blue);
+    width: 1.375rem;
+    height: auto;
+    padding-right: 0.625rem;
+}
+
+.icone_filter_person {
+    margin: 0;
+    fill: var(--blue);
+    width: auto;
+    height: 1.375rem;
+    padding-right: 0.625rem;
+}
+
+.icone_filter_heart {
+    margin: 0;
+    fill: var(--blue);
+    width: 1.375rem;
+    height: auto;
+    padding-right: 0.625rem;
+}
+
+.icone_filter_fire {
+    margin: 0;
+    fill: var(--blue);
+    width: 1.125rem;
+    height: auto;
+    padding-right: 0.625rem;
+}
+
+/* Infos */
+
+.infos {
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.infos p {
+    padding-left: 0.625rem;
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+}
+
+.icone_filter_info {
+    margin: 0;
+    fill: var(--blue);
+    width: 0.25rem;
+    height: 0.625rem;
+}
+
+.icone_filter_info_radius {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--grey);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* End filter bar */
+
+/* All result */
+
+.all_result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* Hébergements à Marseille */
+
+.main_result {
+    width: 100%;
+    height: auto;
+    background-color: var(--grey);
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    border-radius: 15px;
+    align-items: center;
+    align-content: center;
+}
+
+.main_result_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.875rem;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: var(--title-font-size);
+    font-weight: var(--bold-font-weight);
+    padding-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+
+/* Tuile cliquable */
+
+.proposition_hebergement {
+    width: 100%;
+    /*max-height: 12.953rem;*/
+    border: solid 4px var(--white);
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.proposition_hebergement:hover {
+    transform: scale(1.1);
+}
+
+.card_img_fred {
+    width: 100%;
+    min-height: 7.75rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/hebergements/fred-kleber.jpg);
+    border-radius: 20px 20px 0 0;
+}
+
+.card_img_febrian {
+    width: 100%;
+    min-height: 7.75rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/hebergements/febrian-zakaria.jpg);
+    border-radius: 20px 20px 0 0;
+}
+
+.card_img_reisetopia {
+    width: 100%;
+    min-height: 7.75rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/hebergements/reisetopia.jpg);
+    border-radius: 20px 20px 0 0;
+}
+
+.card_img_annie {
+    width: 100%;
+    min-height: 7.75rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/hebergements/annie-spratt.jpg);
+    border-radius: 20px 20px 0 0;
+}
+
+.card_img_marcus {
+    width: 100%;
+    min-height: 7.75rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/hebergements/marcus-loke.jpg);
+    border-radius: 20px 20px 0 0;
+}
+
+.card_img_nicate {
+    width: 100%;
+    min-height: 7.75rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/hebergements/nicate-lee.jpg);
+    border-radius: 20px 20px 0 0;
+}
+
+.icone_filter_star_first {
+    margin: 0;
+    fill: var(--blue);
+    width: 0.893rem;
+    height: 0.828rem;
+    cursor: pointer;
+    margin-bottom: 0.625rem;
+    margin-left: 1rem;
+}
+
+.icone_filter_star {
+    margin: 0;
+    fill: var(--blue);
+    width: 0.893rem;
+    height: 0.828rem;
+    cursor: pointer;
+    margin-bottom: 0.625rem;
+}
+
+.icone_filter_star_last {
+    margin: 0;
+    fill: var(--grey);
+    width: 0.893rem;
+    height: 0.828rem;
+    cursor: pointer;
+    margin-bottom: 0.625rem;
+}
+
+.card_name {
+    font-size: var(--body-font-size);
+    font-weight: var(--bold-font-weight);
+    color: var(--black);
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    margin-left: 1rem;
+}
+
+.card_price {
+    font-size: var(--description-font-size);
+    font-weight: var(--body-font-weight);
+    color: var(--black);
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    margin-left: 1rem;
+}
+
+/* End tuile cliquable */
+
+.show_more {
+    font-size: var(--body-highlight-font-size);
+    font-weight: var(--bold-font-weight);
+    color: var(--black);
+    transition: color 0.2s ease-in-out;
+}
+
+.show_more:hover {
+    color: var(--blue);
+}
+
+/* End Hébergements à Marseille */
+
+/* Most popular */
+
+.aside_result {
+    width: auto;
+    height: auto;
+    background-color: var(--grey);
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    padding-bottom: 1.875rem;
+    border-radius: 15px;
+}
+
+.h2_stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icone_filter_line {
+    margin: 0;
+    fill: var(--blue);
+    width: 1.125rem;
+    height: 0.984rem;
+    cursor: pointer;
+}
+
+.most_popular {
+    max-width: 100%;
+    height: 9.125rem;
+    margin-bottom: 1.875rem;
+    border: solid 4px var(--white);
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.most_popular:hover {
+    transform: scale(1.1);
+}
+
+.most_popular_flex {
+    display: flex;
+}
+
+.card_img_aside_emile {
+    width: 9rem;
+    height: 9.125rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/hebergements/emile-guillemot.jpg);
+    border-radius: 20px 0 0 20px;
+}
+
+.card_img_aside_aw {
+    width: 9rem;
+    height: 9.125rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/hebergements/aw-creative.jpg);
+    border-radius: 20px 0 0 20px;
+}
+
+.card_img_aside_febrian2 {
+    width: 9rem;
+    height: 9.125rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/hebergements/febrian-zakaria2.jpg);
+    border-radius: 20px 0 0 20px;
+}
+
+.card_star_aside {
+    margin-top: 4rem;
+}
+
+.card_star_aside_aw {
+    margin-top: 2.9rem;
+}
+
+.card_name_aside {
+    font-size: var(--body-font-size);
+    font-weight: var(--bold-font-weight);
+    color: var(--black);
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    margin-left: 1rem;
+}
+
+.card_price_aside {
+    font-size: var(--description-font-size);
+    font-weight: var(--body-font-weight);
+    color: var(--black);
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    margin-left: 1rem;
+}
+
+.card_text_aside {
+    width: 70%;
+}
+
+.icone_aside_star_first {
+    margin: 0;
+    fill: var(--blue);
+    width: 0.893rem;
+    height: 0.828rem;
+    cursor: pointer;
+    margin-bottom: 0.625rem;
+    margin-left: 1rem;
+}
+
+.icone_aside_star {
+    margin: 0;
+    fill: var(--blue);
+    width: 0.893rem;
+    height: 0.828rem;
+    cursor: pointer;
+    margin-bottom: 0.625rem;
+}
+
+.icone_aside_star_last {
+    margin: 0;
+    fill: var(--grey);
+    width: 0.893rem;
+    height: 0.828rem;
+    cursor: pointer;
+    margin-bottom: 0.625rem;
+}
+
+/* End most popular */
+
+/* Activity */
+
+.activity {
+    max-width: 100%;
+    height: auto;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    border-radius: 15px;
+    align-items: center;
+    align-content: center;
+}
+
+.activity_result {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.activity_popular {
+    margin-bottom: 1.875rem;
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.activity_popular:hover {
+    transform: scale(1.1);
+}
+
+.card_img_activity_port {
+    width: 100%;
+    height: 23rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/activites/reno-laithienne.jpg);
+    border-radius: 20px 20px 0 0;
+}
+
+.card_img_activity_fort {
+    width: 100%;
+    height: 23rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/activites/paul-hermann.jpg);
+    border-radius: 20px 20px 0 0;
+}
+
+.card_img_activity_parc {
+    width: 100%;
+    height: 23rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/activites/kilyan-sockalingum.jpg);
+    border-radius: 20px 20px 0 0;
+}
+
+.card_img_activity_dame {
+    width: 100%;
+    height: 23rem;
+    background-size: cover;
+    background-position : 50% 50%;
+    background-image: url(/images/activites/florian-wehde.jpg);
+    border-radius: 20px 20px 0 0;
+}
+
+.card_name_activity {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: var(--body-font-size);
+    font-weight: var(--bold-font-weight);
+    color: var(--black);
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    margin-left: 1rem;
+}
+
+/*End Activity */
+
+/* Footer */
+
+footer {
+    background-color: var(--grey);
+    color: var(--black);
+    display: flex;
+}
+
+.column_footer {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    padding: 1.5rem;
+}
+
+.title_footer {
+    font-size: var(--body-highlight-font-size);
+    font-weight: var(--bold-font-weight);
+    color: var(--black);
+    transition: color 0.2s ease-in-out;
+}
+
+.title_footer:hover {
+    color: var(--blue);
+}
+
+.text_footer {
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    color: var(--black);
+    margin-top: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.text_footer:hover {
+    color: var(--blue);
+}
+
+/*End Footer */
+
+/* Responsive */
+
+@media screen and (min-width: 1441px) {
+
+    body {
+        max-width: 90rem;
+    }
+
+    .margin__left__right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icone_loupe {
+        display: none;
+    }
+
+    .icone-map {
+        width: 0.875rem;
+        height: 1.125rem;
+    }
+
+    .search_filter {
+        max-width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+
+    .margin__left__right {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+
+    .icone_loupe {
+        display: none;
+    }
+
+    .icone-map {
+        width: 0.875rem;
+        height: 1.125rem;
+    }
+
+    .search_filter {
+        max-width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+
+    .icone_loupe {
+        display: none;
+    }
+
+    .select-filter {
+        border-radius: 50px;
+    }  
+
+    .search_filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 5.688rem;
+        width: 100%;
+    }
+
+    .search_filter div {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search_filter div a {
+        max-width: 23%;
+    }
+
+    .all_result {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_result {
+        width: auto;
+        height: 40rem; 
+}
+
+    .main_result_grid {
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .proposition_hebergement {
+        max-width: 95%;
+        height: auto;
+    }
+
+    .card_text {
+        height: 4.5rem;
+    }
+
+    .card_img_fred, .card_img_febrian, .card_img_reisetopia, .card_img_annie, .card_img_marcus, .card_img_nicate {
+        width: 100%;
+        min-height: 8rem;
+    }
+
+    .card_name, .card_price {
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        margin-left: 0.3rem;
+    }
+
+    .icone_filter_star_first {
+        margin-left: 0.3rem;
+    }
+
+    .h2_stat {
+        padding-top: 1rem;
+    }
+
+    .aside_result {
+        /*display: flex;
+        flex-direction: row;*/
+        width: auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .card_aside_responsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card_text_aside {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .icone_aside_star_first, .icone_aside_star, .icone_aside_star_last {
+        margin-top: 2rem;
+    }
+
+    .most_popular {
+        width: 31%;
+        height: 9.125rem;
+        justify-content: space-between;
+    }
+
+    .card_name_aside, .card_price_aside {
+        /*font-size: 0.8rem;*/
+    }
+
+    .card_star_aside_last {
+        margin-top: 1rem;
+    }
+
+    .card_img_aside_aw, .card_img_aside_emile, .card_img_aside_febrian2 {
+        width: 40%;
+    }
+
+    .margin__left__right {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+
+    .activity {
+        margin-bottom: 1.875rem;
+    }
+
+    .activity_result {
+        gap: 1rem;
+    }
+
+    .activity_popular {
+        width: 100%;
+    }
+
+    .card_img_activity_fort,
+    .card_img_activity_port,
+    .card_img_activity_parc, 
+    .card_img_activity_dame {
+        /*width: 100%;*/
+        height: 14rem;
+    }
+
+    .card_name_activity {
+        max-width: fit-content;
+        height: 3rem;
+        margin: 1rem;
+    }
+
+    .column_footer {
+        width: 18rem;
+    }
+
+    .icone-map {
+        width: 1rem;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 768px) {
+
+    .icone_loupe {
+        display: none;
+    }
+
+    .select-filter {
+        border-radius: 50px;
+    }  
+
+    .search_filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 5.688rem;
+        width: 100%;
+    }
+
+    .search_filter div {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search_filter div a {
+        max-width: 23%;
+    }
+
+    .all_result {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_result {
+        width: auto;
+        height: 34rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;   
+    }
+
+    .main_result_grid {
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .proposition_hebergement {
+        max-width: 95%;
+        height: 10rem;
+    }
+
+    .card_text {
+        height: 4.5rem;
+    }
+
+    .icone_filter_star_first {
+        margin-left: 0.3rem;
+    }
+
+    .card_img_fred, .card_img_febrian, .card_img_reisetopia, .card_img_annie, .card_img_marcus, .card_img_nicate {
+        width: 100%;
+        min-height: 6rem;
+    }
+
+    .card_name, .card_price {
+        font-size: 0.8rem;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        margin-left: 0.3rem;
+    }
+
+    .aside_result {
+        /*display: flex;
+        flex-direction: row;*/
+        width: auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; 
+        padding-bottom: 0;
+    }
+
+    .card_aside_responsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card_text_aside {
+        display: flex;
+        flex-direction: column;
+        height: 7rem;
+    }
+
+    .icone_aside_star_first, .icone_aside_star, .icone_aside_star_last {
+        margin-top: 2rem;
+    }
+
+    .h2_stat {
+        padding-top: 1rem;
+    }
+
+    .most_popular {
+        width: 31%;
+        height: 7rem;
+        justify-content: space-between;
+    }
+
+    .card_name_aside {
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .card_price_aside {
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .icone_aside_star_first {
+        margin-left: 0.5rem;
+    }
+
+    .card_star_aside {
+        margin-top: 1rem;
+    }
+
+    .card_img_aside_aw, .card_img_aside_emile, .card_img_aside_febrian2 {
+        width: 40%;
+        height: auto;
+    }
+
+    .margin__left__right {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+
+    .activity {
+        margin-bottom: 1.875rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; 
+    }
+
+    .activity_result {
+        gap: 1rem;
+    }
+
+    .activity_popular {
+        width: 100%;
+    }
+
+    .card_img_activity_fort,
+    .card_img_activity_port,
+    .card_img_activity_parc, 
+    .card_img_activity_dame {
+        /*width: 100%;*/
+        height: 11rem;
+    }
+
+    .card_name_activity {
+        font-size: 0.8rem;
+        max-width: fit-content;
+        height: 3rem;
+        margin: 0.6rem;
+    }
+
+    .column_footer {
+        width: 18rem;
+    }
+
+    .title_footer, .text_footer {
+        font-size: 0.8rem;
+    }
+
+    .icone-map {
+        width: 1rem;
+        height: auto;
+    }
+
+}
+ 
+@media only screen and (max-width: 767px) and (min-width: 426px) {
+
+    .ordre_mobile1 {
+        order: 2; /* Inverser l'ordre de la section 1 pour les écrans plus petits (moins de 768px) */
+      }
+    
+    .ordre_mobile2 {
+        order: 1; /* Inverser l'ordre de la section 2 pour les écrans plus petits (moins de 768px) */
+      }
+
+    .margin__left__right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .appBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .appBar a {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+        width: 60%;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .active {
+        width: 50%;
+        font-size: 1.5rem;
+        text-align: center;
+        border-bottom: solid 2px var(--grey);
+        padding-bottom: 1rem;
+    }
+
+    .active:hover {
+        color: var(--blue);
+        border-bottom: solid 2px var(--blue);
+        border-top: none;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .inactive {
+        width: 50%;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+        border-bottom: solid 2px var(--grey);
+        padding-bottom: 1rem;
+    }
+    
+    .inactive:hover {
+        color: var(--blue);
+        border-top: none;
+        border-bottom: solid 2px var(--blue);
+        transition: color 0.2s ease-in-out;
+    }
+
+    main {
+        margin: 2rem;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    .slogan, .filter, .infos p {
+        font-size: 1.5rem;
+    }
+
+    .frm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    form {
+        width: 80%;
+        height: 4rem;
+    }
+
+    .city {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .back_icone_loupe {
+        background-color: var(--blue);
+        width: 5rem;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .back_icone_loupe:hover {
+        transform: scale(1.1);
+    }
+
+    .icone_loupe {
+        display: inline;
+        width: 1.7rem;
+    }
+
+    .icone-map {
+        width: 1.5rem;
+        height: auto;
+    }
+
+    .search_icon {
+        width: 5rem;
+        height: 100%;
+    }
+
+    .search_filter {
+        max-width: 100%;
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .select-filter {
+        border-radius: 50px;
+    }    
+
+    .search_filter div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .search_filter div a {
+        width: 100%;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .icone_filter_dollar, .icone_filter_fire, .icone_filter_heart, .icone_filter_person {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .all_result {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside_result {
+        border-radius: 0;
+    }
+
+    .most_popular {
+        width: 100%;
+        height: 16rem;
+    }
+
+    .card_img_aside_aw, .card_img_aside_emile, .card_img_aside_febrian2 {
+        width: 30%;
+        height: 16rem;
+    }
+
+    .card_text_aside {
+        width: 70%;
+        height: 16rem;
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+
+    .card_aside_star {
+        margin-top: 8rem;
+    }
+
+    .card_price_aside, .card_name_aside {
+        font-size: 1.7rem;
+    }
+
+    .icone_aside_star, .icone_aside_star_first, .icone_aside_star_last, .icone_filter_line {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .card_aside_responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .proposition_hebergement {
+        
+        height: 24rem;
+    }
+
+    .main_result {
+        width: 92%;
+        background-color: var(--white);
+        height: 170rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main_result_grid {
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        /*height: 100%;*/
+    }
+
+    .card_img_fred, .card_img_febrian, .card_img_marcus, .card_img_nicate, .card_img_reisetopia, .card_img_annie {
+        width: 100%;
+        height: 70%;
+    }
+
+    .card_name, .card_price {
+        font-size: 1.5rem;
+    }
+
+    .icone_filter_star, .icone_filter_star_first, .icone_filter_star_last {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .show_more {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+
+    .activity {
+        margin: 1rem;
+        height: 108rem;
+    }
+
+    .activity h2 {
+        margin-top: 4rem;
+    }
+
+    .activity_result {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activity_popular {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.10);
+    }
+
+    .activity_popular div {
+        width: 100%;
+        height: 18rem;
+    }
+
+    .activity_popular p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column_footer {
+        width: 80%;
+    }
+
+    .title_footer, .text_footer{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 376px)  {
+    
+
+    .ordre_mobile1 {
+        order: 2; /* Inverser l'ordre de la section 1 pour les écrans plus petits (moins de 768px) */
+      }
+    
+    .ordre_mobile2 {
+        order: 1; /* Inverser l'ordre de la section 2 pour les écrans plus petits (moins de 768px) */
+      }
+
+    .margin__left__right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .appBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .appBar a {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+        width: 50%;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .active {
+        width: 50%;
+        font-size: 1.5rem;
+        text-align: center;
+        border-bottom: solid 2px var(--grey);
+        padding-bottom: 1rem;
+    }
+
+    .active:hover {
+        color: var(--blue);
+        border-bottom: solid 2px var(--blue);
+        border-top: none;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .inactive {
+        width: 50%;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+        border-bottom: solid 2px var(--grey);
+        padding-bottom: 1rem;
+    }
+    
+    .inactive:hover {
+        color: var(--blue);
+        border-top: none;
+        border-bottom: solid 2px var(--blue);
+        transition: color 0.2s ease-in-out;
+    }
+
+    main {
+        margin: 2rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .slogan, .infos p {
+        font-size: 1rem;
+    }
+
+    .filter {
+        font-size: 1.5rem;
+    }
+
+    .frm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    form {
+        width: 100%;
+        height: 3.5rem;
+    }
+
+    .city {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .back_icone_loupe {
+        background-color: var(--blue);
+        width: 5rem;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .back_icone_loupe:hover {
+        transform: scale(1.1);
+    }
+
+    .icone_loupe {
+        display: inline;
+        width: 1.5rem;
+    }
+
+    .icone-map {
+        width: 1.3rem;
+        height: auto;
+    }
+
+    .search_icon {
+        width: 5rem;
+        height: 100%;
+    }
+
+    .search_filter {
+        max-width: 100%;
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .select-filter {
+        border-radius: 50px;
+    }    
+
+    .search_filter div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .search_filter div a {
+        width: 100%;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+
+    .icone_filter_dollar, .icone_filter_fire, .icone_filter_heart, .icone_filter_person {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .all_result {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside_result {
+        border-radius: 0;
+    }
+
+    .most_popular {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .card_img_aside_aw, .card_img_aside_emile, .card_img_aside_febrian2 {
+        width: 30%;
+        height: 10rem;
+    }
+
+    .card_text_aside {
+        width: 70%;
+        height: 10rem;
+        justify-content: space-between;
+    }
+
+    .card_aside_star {
+        margin-top: 5rem;
+    }
+
+    .card_aside_star_mid {
+        margin-top: 4rem;
+    }
+
+    .card_price_aside, .card_name_aside {
+        font-size: 1rem;
+    }
+
+    .icone_aside_star, .icone_aside_star_first, .icone_aside_star_last, .icone_filter_line {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .card_aside_responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .proposition_hebergement {
+        height: 13.5rem;
+    }
+
+    .main_result {
+        width: 86%;
+        background-color: var(--white);
+        height: 104rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main_result_grid {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        /*height: 100%;*/
+    }
+
+    .card_img_fred, .card_img_febrian, .card_img_marcus, .card_img_nicate, .card_img_reisetopia, .card_img_annie {
+        width: 100%;
+        height: 35%;
+    }
+
+    .card_name, .card_price {
+        font-size: 1rem;
+    }
+
+    .icone_filter_star, .icone_filter_star_first, .icone_filter_star_last {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .show_more {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .activity {
+        margin: 1rem;
+        height: 72rem;
+    }
+
+    .activity h2 {
+        margin-top: 4rem;
+    }
+
+    .activity_result {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activity_popular {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.10);
+    }
+
+    .activity_popular div {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .activity_popular p {
+        font-size: 1rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column_footer {
+        width: 80%;
+    }
+
+    .title_footer, .text_footer{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+    
+
+    .ordre_mobile1 {
+        order: 2; /* Inverser l'ordre de la section 1 pour les écrans plus petits (moins de 768px) */
+      }
+    
+    .ordre_mobile2 {
+        order: 1; /* Inverser l'ordre de la section 2 pour les écrans plus petits (moins de 768px) */
+      }
+
+    .margin__left__right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .appBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .appBar a {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+        width: 40%;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .active {
+        width: 50%;
+        font-size: 1rem;
+        text-align: center;
+        border-bottom: solid 2px var(--grey);
+        padding-bottom: 1rem;
+    }
+
+    .active:hover {
+        color: var(--blue);
+        border-bottom: solid 2px var(--blue);
+        border-top: none;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .inactive {
+        width: 50%;
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+        border-bottom: solid 2px var(--grey);
+        padding-bottom: 1rem;
+    }
+    
+    .inactive:hover {
+        color: var(--blue);
+        border-top: none;
+        border-bottom: solid 2px var(--blue);
+        transition: color 0.2s ease-in-out;
+    }
+
+    main {
+        margin: 2rem;
+    }
+
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    .slogan, .infos p {
+        font-size: 1rem;
+    }
+
+    .filter {
+        font-size: 1.2rem;
+    }
+
+    .frm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    form {
+        width: 100%;
+        height: 3.2rem;
+    }
+
+    .city {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .back_icone_loupe {
+        background-color: var(--blue);
+        width: 5rem;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .back_icone_loupe:hover {
+        transform: scale(1.1);
+    }
+
+    .icone_loupe {
+        display: inline;
+        width: 1.2rem;
+    }
+
+    .icone-map {
+        width: 1rem;
+        height: auto;
+    }
+
+    .search_icon {
+        width: 5rem;
+        height: 100%;
+    }
+
+    .search_filter {
+        max-width: 100%;
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .select-filter {
+        border-radius: 50px;
+    }    
+
+    .search_filter div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .search_filter div a {
+        width: 100%;
+        height: 3rem;
+        font-size: 0.8rem;
+    }
+
+    .icone_filter_dollar, .icone_filter_fire, .icone_filter_heart, .icone_filter_person {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .all_result {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside_result {
+        border-radius: 0;
+    }
+
+    .most_popular {
+        width: 100%;
+        height: 8rem;
+    }
+
+    .card_img_aside_aw, .card_img_aside_emile, .card_img_aside_febrian2 {
+        width: 30%;
+        height: 8rem;
+    }
+
+    .card_text_aside {
+        width: 70%;
+        height: 8rem;
+        justify-content: space-between;
+    }
+
+    .card_aside_star {
+        margin-top: 3rem;
+    }
+
+    .card_aside_star_mid {
+        margin-top: 2rem;
+    }
+
+    .card_price_aside, .card_name_aside {
+        font-size: 0.8rem;
+    }
+
+    .icone_aside_star, .icone_aside_star_first, .icone_aside_star_last, .icone_filter_line {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .card_aside_responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .proposition_hebergement {
+        height: 12.5rem;
+    }
+
+    .main_result {
+        width: 81%;
+        background-color: var(--white);
+        height: 95rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main_result_grid {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        /*height: 100%;*/
+    }
+
+    .card_img_fred, .card_img_febrian, .card_img_marcus, .card_img_nicate, .card_img_reisetopia, .card_img_annie {
+        width: 100%;
+        height: 30%;
+    }
+
+    .card_name, .card_price {
+        font-size: 0.8rem;
+    }
+
+    .icone_filter_star, .icone_filter_star_first, .icone_filter_star_last {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .show_more {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .activity {
+        margin: 1rem;
+        height: 57rem;
+    }
+
+    .activity h2 {
+        margin-top: 4rem;
+    }
+
+    .activity_result {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activity_popular {
+        width: 100%;
+        height: 11rem;
+        margin-bottom: 0;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.10);
+    }
+
+    .activity_popular div {
+        width: 100%;
+        height: 8rem;
+    }
+
+    .activity_popular p {
+        margin: 0;
+        padding-left: 1rem;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column_footer {
+        width: 80%;
+    }
+
+    .title_footer, .text_footer{
+        font-size: 0.8rem;
+    }
+}
