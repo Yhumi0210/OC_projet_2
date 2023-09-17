@@ -130,12 +130,6 @@ form {
 
 }
 
-.icone {
-    color: var(--blue);
-    width: 0.875rem;
-    height: 1.125rem;
-}
-
 /* End main hero */
 
 /* Filter bar */
@@ -187,7 +181,6 @@ form {
 .svg_dollar {
     width: 10.813rem;
     height: 3.125rem;
-    
 }
 
 .svg_person {
@@ -207,7 +200,7 @@ form {
 
 .icone_filter_dollar {
     margin: 0;
-    fill: var(--blue);
+    color: var(--blue);
     width: 1.375rem;
     height: auto;
     padding-right: 0.625rem;
@@ -215,15 +208,15 @@ form {
 
 .icone_filter_person {
     margin: 0;
-    fill: var(--blue);
-    width: auto;
-    height: 1.375rem;
+    color: var(--blue);
+    width: 1.375rem;
+    height: auto;
     padding-right: 0.625rem;
 }
 
 .icone_filter_heart {
     margin: 0;
-    fill: var(--blue);
+    color: var(--blue);
     width: 1.375rem;
     height: auto;
     padding-right: 0.625rem;
@@ -231,7 +224,7 @@ form {
 
 .icone_filter_fire {
     margin: 0;
-    fill: var(--blue);
+    color: var(--blue);
     width: 1.125rem;
     height: auto;
     padding-right: 0.625rem;
@@ -254,9 +247,8 @@ form {
 
 .icone_filter_info {
     margin: 0;
-    fill: var(--blue);
-    width: 0.25rem;
-    height: 0.625rem;
+    color: var(--blue);
+    
 }
 
 .icone_filter_info_radius {
@@ -265,8 +257,8 @@ form {
     justify-content: center;
     border: solid 1px var(--grey);
     border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 /* End filter bar */
@@ -379,9 +371,9 @@ h2 {
 
 .icone_filter_star_first {
     margin: 0;
-    fill: var(--blue);
-    width: 0.893rem;
-    height: 0.828rem;
+    color: var(--blue);
+    width: 0.8rem;
+    height: auto;
     cursor: pointer;
     margin-bottom: 0.625rem;
     margin-left: 1rem;
@@ -389,20 +381,22 @@ h2 {
 
 .icone_filter_star {
     margin: 0;
-    fill: var(--blue);
-    width: 0.893rem;
-    height: 0.828rem;
+    color: var(--blue);
+    width: 0.8rem;
+    height: auto;
     cursor: pointer;
     margin-bottom: 0.625rem;
+    margin-left: 0.1rem;
 }
 
 .icone_filter_star_last {
     margin: 0;
-    fill: var(--grey);
-    width: 0.893rem;
-    height: 0.828rem;
+    color: var(--grey);
+    width: 0.8rem;
+    height: auto;
     cursor: pointer;
     margin-bottom: 0.625rem;
+    margin-left: 0.1rem;
 }
 
 .card_name {
@@ -458,9 +452,9 @@ h2 {
 
 .icone_filter_line {
     margin: 0;
-    fill: var(--blue);
-    width: 1.125rem;
-    height: 0.984rem;
+    color: var(--blue);
+    width: 1rem;
+    height: auto;
     cursor: pointer;
 }
 
@@ -542,9 +536,9 @@ h2 {
 
 .icone_aside_star_first {
     margin: 0;
-    fill: var(--blue);
-    width: 0.893rem;
-    height: 0.828rem;
+    color: var(--blue);
+    width: 0.8rem;
+    height: auto;
     cursor: pointer;
     margin-bottom: 0.625rem;
     margin-left: 1rem;
@@ -552,20 +546,22 @@ h2 {
 
 .icone_aside_star {
     margin: 0;
-    fill: var(--blue);
-    width: 0.893rem;
-    height: 0.828rem;
+    color: var(--blue);
+    width: 0.8rem;
+    height: auto;
     cursor: pointer;
     margin-bottom: 0.625rem;
+    margin-left: 0.1rem;
 }
 
 .icone_aside_star_last {
     margin: 0;
-    fill: var(--grey);
-    width: 0.893rem;
-    height: 0.828rem;
+    color: var(--grey);
+    width: 0.8rem;
+    height: auto;
     cursor: pointer;
     margin-bottom: 0.625rem;
+    margin-left: 0.1rem;
 }
 
 /* End most popular */
@@ -704,7 +700,7 @@ footer {
         margin-right: auto;
     }
 
-    .icone_loupe {
+    #icone_loupe {
         display: none;
     }
 
@@ -726,13 +722,13 @@ footer {
         margin-right: 3.125rem;
     }
 
-    .icone_loupe {
+    #icone_loupe {
         display: none;
     }
 
     .icone-map {
-        width: 0.875rem;
-        height: 1.125rem;
+        width: 1rem;
+        height: auto;
     }
 
     .search_filter {
@@ -743,7 +739,7 @@ footer {
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
 
-    .icone_loupe {
+    #icone_loupe {
         display: none;
     }
 
@@ -898,7 +894,7 @@ footer {
 
 @media screen and (max-width: 768px) and (min-width: 768px) {
 
-    .icone_loupe {
+    #icone_loupe {
         display: none;
     }
 
@@ -955,6 +951,11 @@ footer {
         margin-left: 0.3rem;
     }
 
+    .icone_filter_star_first, .icone_filter_star, .icone_filter_star_last {
+        width: 0.8rem;
+        height: auto;
+    }
+
     .card_img_fred, .card_img_febrian, .card_img_reisetopia, .card_img_annie, .card_img_marcus, .card_img_nicate {
         width: 100%;
         min-height: 6rem;
@@ -989,7 +990,13 @@ footer {
     }
 
     .icone_aside_star_first, .icone_aside_star, .icone_aside_star_last {
-        margin-top: 2rem;
+        margin-top: 1rem;
+        width: 0.8rem;
+        height: auto;
+    }
+
+    .card_aside_star_mid {
+        margin-top: 0.8rem;
     }
 
     .h2_stat {
@@ -1077,14 +1084,14 @@ footer {
 
 }
  
-@media only screen and (max-width: 767px) and (min-width: 426px) {
+/*@media only screen and (max-width: 767px) and (min-width: 425px) {
 
     .ordre_mobile1 {
-        order: 2; /* Inverser l'ordre de la section 1 pour les écrans plus petits (moins de 768px) */
+        order: 2; 
       }
     
     .ordre_mobile2 {
-        order: 1; /* Inverser l'ordre de la section 2 pour les écrans plus petits (moins de 768px) */
+        order: 1; 
       }
 
     .margin__left__right {
@@ -1197,14 +1204,9 @@ footer {
         transform: scale(1.1);
     }
 
-    .icone_loupe {
+    #icone_loupe {
         display: inline;
-        width: 1.7rem;
-    }
-
-    .icone-map {
-        width: 1.5rem;
-        height: auto;
+        color: var(--white);
     }
 
     .search_icon {
@@ -1237,11 +1239,6 @@ footer {
         width: 100%;
         height: 4rem;
         font-size: 1.5rem;
-    }
-
-    .icone_filter_dollar, .icone_filter_fire, .icone_filter_heart, .icone_filter_person {
-        width: 2rem;
-        height: 2rem;
     }
 
     .all_result {
@@ -1279,8 +1276,7 @@ footer {
     }
 
     .icone_aside_star, .icone_aside_star_first, .icone_aside_star_last, .icone_filter_line {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1rem;
     }
 
     .card_aside_responsive {
@@ -1308,7 +1304,6 @@ footer {
         display: flex;
         flex-direction: column;
         width: 99%;
-        /*height: 100%;*/
     }
 
     .card_img_fred, .card_img_febrian, .card_img_marcus, .card_img_nicate, .card_img_reisetopia, .card_img_annie {
@@ -1321,8 +1316,7 @@ footer {
     }
 
     .icone_filter_star, .icone_filter_star_first, .icone_filter_star_last {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1rem;
     }
 
     .show_more {
@@ -1372,9 +1366,9 @@ footer {
     .title_footer, .text_footer{
         font-size: 1.5rem;
     }
-}
+}*/
 
-@media only screen and (max-width: 425px) and (min-width: 376px)  {
+@media only screen and (max-width: 767px) and (min-width: 376px)  {
     
 
     .ordre_mobile1 {
@@ -1499,15 +1493,15 @@ footer {
         transform: scale(1.1);
     }
 
-    .icone_loupe {
+    #icone_loupe {
         display: inline;
-        width: 1.5rem;
+        color: var(--white);
     }
 
-    .icone-map {
-        width: 1.3rem;
+    /*.icone-map {
+    width: 1.3rem;
         height: auto;
-    }
+    }*/
 
     .search_icon {
         width: 5rem;
@@ -1541,10 +1535,16 @@ footer {
         font-size: 1rem;
     }
 
-    .icone_filter_dollar, .icone_filter_fire, .icone_filter_heart, .icone_filter_person {
-        width: 1.5rem;
+    .icone_filter_info_radius {
+        border-radius: 50%;
+        width: 2rem;
         height: 1.5rem;
     }
+
+    /*.icone_filter_dollar, .icone_filter_fire, .icone_filter_heart, .icone_filter_person {
+        width: 1.5rem;
+        height: 1.5rem;
+    }*/
 
     .all_result {
         display: flex;
@@ -1803,15 +1803,15 @@ footer {
         transform: scale(1.1);
     }
 
-    .icone_loupe {
+    #icone_loupe {
         display: inline;
-        width: 1.2rem;
+        color: var(--white);
     }
 
-    .icone-map {
+    /*.icone-map {
         width: 1rem;
         height: auto;
-    }
+    }*/
 
     .search_icon {
         width: 5rem;
@@ -1845,10 +1845,16 @@ footer {
         font-size: 0.8rem;
     }
 
-    .icone_filter_dollar, .icone_filter_fire, .icone_filter_heart, .icone_filter_person {
+    .icone_filter_info_radius {
+        border-radius: 50%;
+        width: 2rem;
+        height: 1.3rem;
+    }
+
+    /*.icone_filter_dollar, .icone_filter_fire, .icone_filter_heart, .icone_filter_person {
         width: 1.5rem;
         height: 1.5rem;
-    }
+    }*/
 
     .all_result {
         display: flex;
