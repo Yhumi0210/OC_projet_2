@@ -320,7 +320,7 @@ h2 {
     min-height: 7.75rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/hebergements/fred-kleber.jpg);
+    background-image: url(../images/hebergements/fred-kleber.jpg);
     border-radius: 20px 20px 0 0;
 }
 
@@ -329,7 +329,7 @@ h2 {
     min-height: 7.75rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/hebergements/febrian-zakaria.jpg);
+    background-image: url(../images/hebergements/febrian-zakaria.jpg);
     border-radius: 20px 20px 0 0;
 }
 
@@ -338,7 +338,7 @@ h2 {
     min-height: 7.75rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/hebergements/reisetopia.jpg);
+    background-image: url(../images/hebergements/reisetopia.jpg);
     border-radius: 20px 20px 0 0;
 }
 
@@ -347,7 +347,7 @@ h2 {
     min-height: 7.75rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/hebergements/annie-spratt.jpg);
+    background-image: url(../images/hebergements/annie-spratt.jpg);
     border-radius: 20px 20px 0 0;
 }
 
@@ -356,7 +356,7 @@ h2 {
     min-height: 7.75rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/hebergements/marcus-loke.jpg);
+    background-image: url(../images/hebergements/marcus-loke.jpg);
     border-radius: 20px 20px 0 0;
 }
 
@@ -365,7 +365,7 @@ h2 {
     min-height: 7.75rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/hebergements/nicate-lee.jpg);
+    background-image: url(../images/hebergements/nicate-lee.jpg);
     border-radius: 20px 20px 0 0;
 }
 
@@ -482,7 +482,7 @@ h2 {
     height: 9.125rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/hebergements/emile-guillemot.jpg);
+    background-image: url(../images/hebergements/emile-guillemot.jpg);
     border-radius: 20px 0 0 20px;
 }
 
@@ -491,7 +491,7 @@ h2 {
     height: 9.125rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/hebergements/aw-creative.jpg);
+    background-image: url(../images/hebergements/aw-creative.jpg);
     border-radius: 20px 0 0 20px;
 }
 
@@ -500,7 +500,7 @@ h2 {
     height: 9.125rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/hebergements/febrian-zakaria2.jpg);
+    background-image: url(../images/hebergements/febrian-zakaria2.jpg);
     border-radius: 20px 0 0 20px;
 }
 
@@ -601,7 +601,7 @@ h2 {
     height: 23rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/activites/reno-laithienne.jpg);
+    background-image: url(../images/activites/reno-laithienne.jpg);
     border-radius: 20px 20px 0 0;
 }
 
@@ -610,7 +610,7 @@ h2 {
     height: 23rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/activites/paul-hermann.jpg);
+    background-image: url(../images/activites/paul-hermann.jpg);
     border-radius: 20px 20px 0 0;
 }
 
@@ -619,7 +619,7 @@ h2 {
     height: 23rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/activites/kilyan-sockalingum.jpg);
+    background-image: url(../images/activites/kilyan-sockalingum.jpg);
     border-radius: 20px 20px 0 0;
 }
 
@@ -628,7 +628,7 @@ h2 {
     height: 23rem;
     background-size: cover;
     background-position : 50% 50%;
-    background-image: url(/images/activites/florian-wehde.jpg);
+    background-image: url(../images/activites/florian-wehde.jpg);
     border-radius: 20px 20px 0 0;
 }
 
